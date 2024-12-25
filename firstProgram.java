@@ -1,7 +1,7 @@
 // single-line comments -> for single line comments
 /* for multi line comments */ 
 
-// package com.company -> A package in Java is used to group related classes. Think of it as a folder in a file directory
+// package com.company -> A package in Java is used to group related classes or functions and feed them to the specified package. Think of it as a folder in a file directory
 
 public class firstProgram{
     public static void main(String[] args) { // Starting-point function
