@@ -15,8 +15,11 @@ We made a class named 'firstProgram' with the same file name and it has a functi
 
 Basic Structure of a Java Program -> made of two things
 - Functions : A piece of code that does a specific task like addition, subtraction
+    use camelCasing eg. collegeStudent, etpMarks, etc.
 
 - Classes : A collection of similar type of methods(functions) or properties that represents a group
     works as a template for making objects
+    use Pascal Casing eg. Main, Marks, Student, etc.
+
 
 */
