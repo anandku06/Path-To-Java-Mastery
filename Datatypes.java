@@ -34,6 +34,11 @@
 
 public class Datatypes {
     public static void main(String[] args) {
-        
+        int num1 = 12;
+        char initial = 'a';
+        byte num2 = 12;
+        float rate = 1.23f;
+        double interest = 2.345;
+        String name = "Anand";
     }
 }
