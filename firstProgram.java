@@ -2,7 +2,9 @@
 /* for multi line comments */ 
 
 // package com.company -> A package in Java is used to group related classes or functions and feed them to the specified package. Think of it as a folder in a file directory
-
+/* 
+    Just like we have some rules that we follow to write anything, here also we have to follow some rules to write a Java Program. The rules are referred as syntax
+*/
 public class firstProgram{
     public static void main(String[] args) { // Starting-point function
         System.out.println("Hello World!!");
