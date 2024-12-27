@@ -6,6 +6,8 @@
 
 public class Variables {
     public static void main(String[] args) {
+        int data = 231; // 'data' variable is declared with value assigned to it
 
+        System.out.println(data);
     }
 }
