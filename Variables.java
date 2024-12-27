@@ -21,5 +21,3 @@ public class Variables {
         System.out.println(data);
     }
 }
-
-/* Datatype */
