@@ -23,6 +23,4 @@ Basic Structure of a Java Program -> made of two things
 - Classes : A collection of similar type of methods(functions) or properties that represents a group
     works as a template for making objects
     use Pascal Casing eg. Main, Marks, Student, etc.
-
-
 */
