@@ -14,7 +14,7 @@
         2. assignment
 */
 
-public class Variables {
+public class Variable {
     public static void main(String[] args) {
         int age = 90;
 
