@@ -11,7 +11,7 @@ public class MyFirstProgram {
         System.err.println("Hello World!!"); // used to print anything to the console (in new line)
         System.out.print("I am Robot.\n"); // used to print anything in the parenthesis (in the same line)
         System.out.print("BANKAI \n Katen Kyokutsu Karamtsu Shinjo"); // '\n' is a escape sequence character used to tell the compiler to shift to a new line
-        System.out.print("\nBANKAI \n Tensa Zangetsu");
+        System.out.print("\nBANKAI \n Tensa Zangetsu"); // 'sout' shortcut for the print statement
     }
 }
 
