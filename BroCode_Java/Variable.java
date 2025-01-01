@@ -17,7 +17,9 @@
 public class Variable {
     public static void main(String[] args) {
         int age = 90;
+        char letter = 'M';
 
         System.out.println(age);
+        System.out.println(letter);
     }
 }
