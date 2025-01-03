@@ -30,5 +30,8 @@ public class Variable {
         System.out.println(letter);
         System.out.println(rate);
         System.out.println(interest);
+        System.out.println("The current interest on the Loan is " + interest); // this is concatenation of strings using '+' operator
+        System.out.println("The current interest on the Loan is " + "interest"); // this is concatenation of strings using '+' operator ; you can give any other string
+        // note we are not adding any thing to the interest value or the sentence written its just printed together by this method
     }
 }
