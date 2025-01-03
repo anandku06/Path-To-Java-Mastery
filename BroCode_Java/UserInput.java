@@ -31,6 +31,17 @@ public class UserInput {
         else{
             System.out.println("You can't apply for any scholarship");
         }
+
+        /* Common issue : When mixing next() and nextLine(), you might encounter issues because next() leaves the newline character in the input buffer, which nextLine() reads as an empty string */
+
+        System.out.print("School: ");
+        String school = scanner.next();
+        scanner.nextLine(); // this will take the nextline as its input so it will not disturb the further input statements
+
+        System.out.print("Your casual name: ");
+        String cName = scanner.nextLine();
+
+        System.out.println("Your Casual name in " + school + " is " + cName); // this will take name as the newline character
         scanner.close(); // closing working of the scanner object to avoid any unexpected behaviour
     }
 }
