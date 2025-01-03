@@ -46,5 +46,11 @@ public class Variable {
         else{ // 'if' block is false so this block is executed
             System.out.println("New User, Please Login!!");
         }
+
+        String name = "Yhawach"; // Strings are datatype for a collection of characters; enclosed under double quotes
+        String food = "Burger";
+
+        System.out.println("Hello, nice to meet you, " + name + "!!");
+        System.out.println("Today, I ate a " + food + "!!");
     }
 }
