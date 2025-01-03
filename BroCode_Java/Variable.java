@@ -16,10 +16,19 @@
 
 public class Variable {
     public static void main(String[] args) {
-        int age = 90;
+        // an int datatype can only store int values not other datatypes
+
+        int age = 90; // this variable is int bcz it holds a value of 'int' datatype
         char letter = 'M';
+        // char letter = 2; // this is wrong as the variable is of char datatype
+
+        float rate = 0.08f; // here to work with float dataype we use literal 'f' to signify the compiler that it is a float
+
+        double interest = 0.11; // bcz the decimal numbers without any literals are considered as double
 
         System.out.println(age);
         System.out.println(letter);
+        System.out.println(rate);
+        System.out.println(interest);
     }
 }
