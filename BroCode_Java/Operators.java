@@ -38,5 +38,13 @@ public class Operators {
         x++; // Increment operator
 
         System.out.println(x);
+
+        y = 123;
+
+        // y = y - 1; // traditional method
+        // y -= 1; // augmented assignment operator
+        y--; // decrement operator
+
+        System.out.println(y);
     }   
 }
