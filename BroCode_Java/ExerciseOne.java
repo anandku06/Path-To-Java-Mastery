@@ -18,5 +18,7 @@ public class ExerciseOne {
         area = length * width;
 
         System.out.println("The Area of the rectangle of length " + length + " m and width " + width + " m is: " + area + " m.");
+
+        scanner.close();
     }
 }
