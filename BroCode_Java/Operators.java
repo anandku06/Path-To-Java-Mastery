@@ -2,7 +2,7 @@
 
 public class Operators {
     public static void main(String[] args){
-        // Arithmetic Operators
+        // <---------- Arithmetic Operators ------------>
 
         int x = 10;
         int y = 3;
@@ -16,7 +16,7 @@ public class Operators {
 
         System.out.println(z);
 
-        // Augmented Assignment Operators
+        // <----------- Augmented Assignment Operators -------->
 
         // x = x + y; // this can be also written by using augmented assignment operators
         // x += y; // its the same thing as before
@@ -26,6 +26,16 @@ public class Operators {
         // x *= y; // x = x * y;
         // x /= y; // x = x / y; // but here as 'x' is a 'int' datatype so the decimal part of the result is not shown
         x %= y; // x = x % y;
+
+        System.out.println(x);
+
+        // <----------- Increment/Decrement Operator ----------->
+
+        x = 12;
+
+        // x += 1; // augmented assignment operator
+        // x = x + 1; // traditional method;
+        x++; // Increment operator
 
         System.out.println(x);
     }   
