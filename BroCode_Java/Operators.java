@@ -46,5 +46,19 @@ public class Operators {
         y--; // decrement operator
 
         System.out.println(y);
+
+        // Order of Operations -> [P - E - M - D - A - S]
+        /*
+         * P -> parenthesis
+         * E -> exponents
+         * M -> multiplication
+         * D -> division
+         * A -> addition
+         * S -> subtraction
+         */
+
+         double result = 3 + 4 * (7 - 5) / 2.0;
+
+         System.out.println(result);
     }   
 }
