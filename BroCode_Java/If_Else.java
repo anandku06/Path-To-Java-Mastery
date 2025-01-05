@@ -43,6 +43,17 @@ public class If_Else {
             System.out.println("You are not an adult");
         }
 
+        System.out.print("Are you a student (true/false) -> ");
+        boolean isStudent = scanner.nextBoolean();
+
+        if (isStudent) {
+            System.out.println("Study Hard!!");
+        }
+        else{
+            System.out.println("First go to school!!");
+        }
+
+        
         scanner.close();
     }
 }
