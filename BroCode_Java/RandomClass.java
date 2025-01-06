@@ -18,6 +18,11 @@ public class RandomClass {
 
         System.out.println(num);
         System.out.println(num1);
-        System.out.println(isHeads);
+        if(isHeads){
+            System.out.println("Heads!!");
+        }
+        else{
+            System.out.println("Tails!!");
+        }
     }
 }
