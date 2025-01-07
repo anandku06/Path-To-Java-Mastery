@@ -1,8 +1,10 @@
 
 import java.util.Scanner;
 
-public class PracticeMath {
+public class PracticeMath1 {
     public static void main(String[] args) {
+        // Hypotenuse of the triangle
+
         Scanner scanner = new Scanner(System.in);
 
         double a, b, c;
