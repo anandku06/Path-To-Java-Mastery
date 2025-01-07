@@ -18,6 +18,8 @@ public class PracticeMath2 {
         System.out.println("The area of the sphere is -> " + area + "m²");
         System.out.println("The volume of the sphere is -> " + volume + "m³");
 
+        System.out.printf("The circumference, area and volume of the sphere is -> %.1fm, %.1fm², %.1f³", circumference, area, volume); // printf used to format the output of the result with limiting the decimal spaces when needed or etc.
+
         scanner.close();
     }
 }
