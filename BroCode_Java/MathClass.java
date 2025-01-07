@@ -18,7 +18,13 @@ public class MathClass {
 
         res = Math.floor(3.14); // returns the largest value ranging from the -infinity to the number given 
 
+        int maxi = Math.max(20, 50); // returns the maximum value between the two given numbers
+
+        int mini = Math.min(20, 50); // returns the minimun value between the two given numbers
+
         System.out.println(result);
         System.out.println(res);
+        System.out.println(maxi);
+        System.out.println(mini);
     }
 }
