@@ -33,5 +33,20 @@ public class printfStatment {
          System.out.printf("\n%(.2f", price3); // negative number is enclosed in braces
          System.out.printf("\n% .2f", price3); // space if positive, else the negative sign is there
 
+         // [width]
+
+         /*
+          * 0 => zero padding
+          * number => right justified padding
+          * negative number => left justified padding
+          */
+
+          int id1 = 1;
+          int id2 = 23;
+          int id3 = 456;
+
+          System.out.printf("\n%03d", id1); // pads the right side of the number qith  zeros so that the width is 3
+          System.out.printf("\n%3d", id1); // pads the right side of the number with spaces so that the width is 3
+          System.out.printf("\n%-3d", id1); // pads the left side of the number with spaces so that the width is 3
     }
 }
