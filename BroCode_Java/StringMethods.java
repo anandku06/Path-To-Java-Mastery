@@ -13,7 +13,16 @@ public class StringMethods {
         name = name.toUpperCase(); // changes the string to uppercase
         name = name.toLowerCase(); // changes to lowercase
         name = name.trim(); // trims off or removes all whitespaces from the string
+        // name = name.replace("n", "p"); // replaces the specified letter (first args) to the given character (2nd args)
+
+        if(name.isEmpty()){
+            System.out.println("Your name is empty!!");
+        }
+        else{
+            System.out.println("Your name is not empty!!");
+        }
 
         System.out.println(name);
+        System.out.println(name.isEmpty()); // returns true if string is empty, else false
     }
 }
