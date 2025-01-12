@@ -17,10 +17,21 @@ public class NestedIf {
         System.out.print("Are you a student? (true/false) -> ");
         isStudent = scanner.nextBoolean();
 
+        System.out.print("Are you a senior as well? (true/false) -> ");
+        isSenior= scanner.nextBoolean();
+
         if(isStudent){
-            System.out.println("You'll get a student discount of 10%!!");
-            price *= 0.9;
-            System.out.printf("Now the price you have to pay is -> %,.2f", price);
+            if(isSenior){
+                System.out.println("You'll get a senior and student discount as well of 30%!!");
+                price *= 0.7;
+
+                System.out.printf("NOw you have to pay -> %,.2f", price);
+            }
+            else{
+                System.out.println("You'll get a student discount of 10%!!");
+                price *= 0.9;
+                System.out.printf("Now the price you have to pay is -> %,.2f", price);
+            }
         }
         else{
             System.out.println("You won't get any student discount :(");
