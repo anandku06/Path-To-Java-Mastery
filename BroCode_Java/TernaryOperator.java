@@ -25,6 +25,13 @@ public class TernaryOperator {
 
         System.out.println(passOrFail);
 
+        System.out.print("Enter your number -> ");
+        int number = sc.nextInt();
+
+        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
+
+        System.out.println(evenOrOdd);
+
         sc.close();
     }
 }
