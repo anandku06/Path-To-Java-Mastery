@@ -24,17 +24,21 @@ public class EnhancedSwitch {
             
             case "Friday" -> System.out.println("It's a working day(┬┬﹏┬┬)");
 
-            case "Saturday" ->System.out.println("It's a Holiday^_^");
+            case "Saturday" -> System.out.println("It's a Holiday^_^");
 
-            case "Sunday" ->System.out.println("It's a Holiday^_^");
+            case "Sunday" -> System.out.println("It's a Holiday^_^");
 
             default -> System.out.printf("%s is not a day!!");
         }
 
-        // more clear and concise
+        // more clear and concise ; grouping the cases with same output by using comma(,)
 
         switch(day){
-            case
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" -> System.out.println("It's a working day(┬┬﹏┬┬)");
+
+            case "Saturday", "Sunday" -> System.out.println("It's a Holiday^_^");
+
+            default -> System.out.printf("%s is not a day!!", day);
         }
 
         sc.close();
