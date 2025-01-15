@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class LogicalOperators {
     public static void main(String[] args) {
         // Logical Operators in Java used to check and modify more than one conditions simultaneously
@@ -17,5 +19,28 @@ public class LogicalOperators {
         else if(temp > 30 || temp < 0){
             System.out.println("The weather is bad!!");
         } // here either of the condition must be true
+
+        // validating a userName
+        Scanner sc = new Scanner(System.in);
+
+        // username must be between 4-12 chars
+        // must not contain spaces or underscores
+
+        String userName;
+
+        System.out.print("Enter your username -> ");
+        userName = sc.nextLine();
+
+        if (userName.length() < 4 || userName.length() > 12) {
+            System.out.println("Username must be of 4-12 characters long!!");
+        }
+        else if(userName.contains(" ") || userName.contains("_")){
+            System.out.println("Username mustn't contain any spaces and underscores!!");
+        }
+        else{
+            System.out.println("Welcome!!");
+        }
+
+        sc.close();
     }
 }
