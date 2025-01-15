@@ -11,37 +11,7 @@ public class EnhancedSwitch {
         System.out.print("Enter the day -> ");
         day = sc.nextLine();
 
-        // traditionally
-
-        // switch (day) {
-        //     case "Monday":
-        //         System.out.println("It's a working day(┬┬﹏┬┬)");
-        //         break;
-        //     case "Tuesday":
-        //         System.out.println("It's a working day(┬┬﹏┬┬)");
-        //         break;
-        //     case "Wednesday":
-        //         System.out.println("It's a working day(┬┬﹏┬┬)");
-        //         break;
-        //     case "Thursday":
-        //         System.out.println("It's a working day(┬┬﹏┬┬)");
-        //         break;
-        //     case "Friday":
-        //         System.out.println("It's a last working day(‾◡◝)");
-        //         break;
-        //     case "Saturday":
-        //         System.out.println("It's a Holiday^_^");
-        //         break;
-        //     case "Sunday":
-        //         System.out.println("It's a Holiday^_^");
-        //         break;
-        
-        //     default: // if none of the cases matched, then execute this
-        //         System.out.printf("%s is not a day!!", day);
-        //         break;
-        // }
-        
-        // new Syntax
+        // new Syntax : use arrow sign(->) ; no use of break keyword
         
         switch(day){
             case "Monday" -> System.out.println("It's a working day(┬┬﹏┬┬)");
@@ -59,6 +29,12 @@ public class EnhancedSwitch {
             case "Sunday" ->System.out.println("It's a Holiday^_^");
 
             default -> System.out.printf("%s is not a day!!");
+        }
+
+        // more clear and concise
+
+        switch(day){
+            case
         }
 
         sc.close();
