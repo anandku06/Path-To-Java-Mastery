@@ -33,6 +33,21 @@ public class WhileLoops {
             response = sc.next().toUpperCase();
         }
         System.out.println("You escaped!!");
+
+        // variation in While loop called do-while loop
+        // do first then check while condition
+        // that is the code is to be executed once no matter what
+
+        int age;
+
+        System.out.print("Your age -> ");
+        age = sc.nextInt();
+        
+        do{
+            System.out.println("Your age can't be negative");
+            System.out.print("Your age ->");
+            age = sc.nextInt();
+        }while(age < 0);
         sc.close();
     }
 }
