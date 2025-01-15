@@ -6,9 +6,13 @@ public class LogicalOperators {
         // ! -> NOT -> if true then false and vice-versa
 
         double temp = 20;
+        boolean isSunny = true;
 
-        if(temp < 30 && temp >= 0){ // here temp should be less than 30 AND greater than and equal to 0, then true
-            System.out.println("The weather is GOOD!!!");
-        }
+        if(temp < 30 && temp >= 0 && isSunny){ 
+            System.out.println("The weather is GOOD and its sunny outside!!!");
+        } // here temp should be less than 30 AND greater than and equal to 0 AND isSunny should be true, then true
+        else if(temp < 30 && temp >= 0 && !isSunny){
+            
+        } // here the isSunny must be false, as the NOT op will turn the false to true, so the condition will be true
     }
 }
