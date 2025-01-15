@@ -19,8 +19,20 @@ public class WhileLoops {
             name = sc.nextLine();
         } // while the condition(name.isEmpty()) is true, run the enclosed code, untill it becomes false
 
-        System.out.printf("Hello %s", name);
+        System.out.printf("Hello %s\n", name);
 
+        // one problem is infinte loop -> when the condition is always true
+
+        // while (true) {} // here the condition is always true, so the loop won't end
+
+        String response = "";
+
+        while (!response.equals("Q")) {
+            System.out.println("You are playing a game!!");
+            System.out.println("Press Q to exit!!");
+            response = sc.next().toUpperCase();
+        }
+        System.out.println("You escaped!!");
         sc.close();
     }
 }
