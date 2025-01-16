@@ -9,10 +9,11 @@ public class NumberGuessing {
         Scanner sc = new Scanner(System.in);
 
         int guess, attempts = 0, randomNumber;
-        randomNumber = rand.nextInt(1,11);
+        int min = 1, max = 100;
+        randomNumber = rand.nextInt(min, max + 1);
 
         System.out.println("Number Guessing Game!!");
-        System.out.println("Guess a number between 1-10");
+        System.out.println("Guess a number between 1-100");
 
         do{
             System.out.print("Enter your guess -> ");
