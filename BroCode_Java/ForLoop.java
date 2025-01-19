@@ -31,3 +31,4 @@ public class ForLoop {
         sc.close();
     }
 }
+// this exeception typically occurs when a thread running the method  is interrupted while it is sleeping, waiting, or otherwise paused in its execution
