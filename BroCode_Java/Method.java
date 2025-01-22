@@ -16,7 +16,14 @@ public class Method {
         System.out.print("Enter your age -> ");
         age = sc.nextInt();
 
-        happyBirthday(name, age); // arguments
+        if (ageCheck(age)) {
+            System.out.println("You are eligible!!");
+        }
+        else{
+            System.out.println("You are not eligible");
+        }
+
+        // happyBirthday(name, age); // arguments
         // any number of times this function can be called
 
         System.out.print("Enter your number -> ");
@@ -48,4 +55,14 @@ public class Method {
     static double cube(double num){
         return num * num * num;
     }
+
+    static boolean ageCheck(int age){
+        if(age > 18){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 }
