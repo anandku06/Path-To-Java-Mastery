@@ -24,6 +24,9 @@ public class Method {
 
         System.out.println(square(number));
 
+        System.out.println(cube(number));
+
+        sc.close();
     }
 
     static void happyBirthday(String birthdayBoy, int age){ 
@@ -40,5 +43,9 @@ public class Method {
 
     static double square(double num){
         return num * num; // as this method returns a double so using return keyword
+    }
+
+    static double cube(double num){
+        return num * num * num;
     }
 }
