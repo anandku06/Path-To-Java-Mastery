@@ -16,7 +16,7 @@ public class Method {
         System.out.print("Enter your age -> ");
         age = sc.nextInt();
 
-        // happyBirthday(name, age); // arguments
+        happyBirthday(name, age); // arguments
         // any number of times this function can be called
 
         System.out.print("Enter your number -> ");
