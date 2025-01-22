@@ -16,8 +16,14 @@ public class Method {
         System.out.print("Enter your age -> ");
         age = sc.nextInt();
 
-        happyBirthday(name, age); // arguments
+        // happyBirthday(name, age); // arguments
         // any number of times this function can be called
+
+        System.out.print("Enter your number -> ");
+        double number = sc.nextDouble();
+
+        System.out.println(square(number));
+
     }
 
     static void happyBirthday(String birthdayBoy, int age){ 
@@ -31,4 +37,8 @@ public class Method {
     } // void is the return type of this method (not returning anything)
     // static used to make this method run without object reference
     // happyBirthday is the name of the method
+
+    static double square(double num){
+        return num * num; // as this method returns a double so using return keyword
+    }
 }
