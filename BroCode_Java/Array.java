@@ -1,4 +1,6 @@
-public class Arrays {
+import java.util.Arrays;
+
+public class Array {
     public static void main(String[] args) {
         // arrays -> a collection of values of the same datatype
         //              think of it as a variable that can store more than one value.
@@ -16,5 +18,13 @@ public class Arrays {
             System.out.println(fruits[i]);
         }
         // can print all the elements of the array using loops
+
+        Arrays.sort(fruits);
+        
+        // enhanced for-loop / foreach loop
+        for(String fruit : fruits){
+            System.out.println(fruit);
+        }
+        // means for every fruit in fruits array -> do this(here print)
     }
 }
