@@ -11,7 +11,7 @@ public class Array {
 
         String[] fruits = {"Apple", "Orange", "Mango"}; // this is an array 
 
-        fruits[1] = "Banana"; // by specifying any index, elements can be changed
+        fruits[2] = "Banana"; // by specifying any index, elements can be changed
         int numOfFruits = fruits.length; // returns the length of the array
 
         for(int i = 0; i < numOfFruits; i++){
@@ -19,7 +19,8 @@ public class Array {
         }
         // can print all the elements of the array using loops
 
-        Arrays.sort(fruits);
+        Arrays.sort(fruits); // Arrays class method sort() used to sort the elements in the array
+        Arrays.fill(fruits, "Apple"); // fills the whole array with the specified value
         
         // enhanced for-loop / foreach loop
         for(String fruit : fruits){
