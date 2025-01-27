@@ -1,13 +1,16 @@
+import java.util.Scanner;
+
 public class ArrayIII {
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
         // Linear Search
         int[] numbers = {1, 2, 3, 4, 5};
         String[] fruits = {"Apple", "Orange", "Banana", "Grapes"};
-
-        String target2 = "Orange";
-        int target = 2;
         boolean isFound = false;
+
+        System.out.print("Enter the fruit you are searching for -> ");
+        String target2 = sc.nextLine();
+        int target = 2;
 
         for(int i = 0; i < fruits.length; i++){
             if(fruits[i].equals(target2)){
@@ -20,6 +23,8 @@ public class ArrayIII {
         if (!isFound) {
             System.out.println("Element not found!!");
         }
+
+        sc.close();
     }
 }
 
