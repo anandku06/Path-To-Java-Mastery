@@ -7,6 +7,7 @@ public class Varargs {
         //              ... (ellipsis)
 
         System.out.println(add(1, 2,34, 56));
+        System.out.println(average(1, 2,34, 56));
     }
 
     static int add(int... nums){
@@ -16,5 +17,15 @@ public class Varargs {
         }
 
         return sum;
+    }
+
+    static double average(double... nums){
+        double sum = 0;
+
+        for(double num : nums){
+            sum += num;
+        }
+
+        return (sum / nums.length);
     }
 }
