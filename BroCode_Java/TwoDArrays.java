@@ -10,6 +10,8 @@ public class TwoDArrays {
         }; // this is an 2D array as each element is itself is an array
         // to access the elements of this array, we need nested loop
 
+        groceries[0][0] = "pineapple"; // to access or modify the elements we specify the row and columns both
+
         for(String[] foods : groceries){
             for(String food : foods){
                 System.out.print(food + " ");
