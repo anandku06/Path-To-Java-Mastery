@@ -12,8 +12,9 @@ public class TwoDArrays {
 
         for(String[] foods : groceries){
             for(String food : foods){
-                System.out.println(food);
+                System.out.print(food + " ");
             }
+            System.out.println();
         } // first looping through the outer array and then each element's array by the inner loop
     }
 }
