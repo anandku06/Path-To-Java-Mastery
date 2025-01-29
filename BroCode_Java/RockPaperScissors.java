@@ -14,7 +14,7 @@ public class RockPaperScissors {
         };
         String playerChoice, compChoice, playAgain = "yes";
 
-        System.out.print("Choose!! (rock, paper, scissors)");
+        System.out.print("Choose!! (rock, paper, scissors) -> ");
         playerChoice = sc.nextLine().toLowerCase();
 
         if(!playerChoice.equals("rock") && !playerChoice.equals("scissors") && !playerChoice.equals("paper")){
@@ -22,6 +22,25 @@ public class RockPaperScissors {
         }
 
         compChoice = choices[rand.nextInt(0,3)];
+        System.out.println(compChoice);
+
+        if(playerChoice.equals(compChoice)){
+            System.out.println("It's a tie!!");
+        }
+
+        else if(playerChoice.equals("rock") && compChoice.equals("scissors")){
+            System.out.println("You Win!!!");
+        }
+        else if(playerChoice.equals("paper") && compChoice.equals("rock")){
+            System.out.println("You Win!!!");
+        }
+        else if(playerChoice.equals("scissors") && compChoice.equals("paper")){
+            System.out.println("You Win!!!");
+        }
+
+        else{
+            System.out.println("You Lose!!");
+        }
 
         sc.close();
     }
