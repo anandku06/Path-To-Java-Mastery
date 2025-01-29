@@ -23,7 +23,29 @@ public class QuizGame {
 
         Scanner sc = new Scanner(System.in);
 
-        
+        System.out.println("Welcome to the Quiz Game!!");
+
+        for(int i = 0; i < questions.length; i++){
+            System.out.println(questions[i]);
+
+            for(String option : options[i]){
+                System.out.println(option);
+            }
+
+            System.out.print("Enter your guess -> ");
+            guess = sc.nextInt();
+
+            if(guess == answers[i]){
+                System.out.println("Correcct!! You are smart!!");
+                score++;
+            }
+            else{
+                System.out.println("AH! Hard Luck!!");
+            }
+        }
+
+        System.out.println("Your final score is " + score 
+        + " out of " + questions.length);
 
         sc.close();
     }
