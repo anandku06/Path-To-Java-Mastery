@@ -18,5 +18,20 @@ public class TwoDArrays {
             }
             System.out.println();
         } // first looping through the outer array and then each element's array by the inner loop
+
+        // a keypad telephone
+        char[][] telephone = {
+            {'1', '2', '3'},
+            {'4', '5', '6'},
+            {'7', '8', '9'},
+            {'*', '0', '#'},
+        }; 
+
+        for(char[] i : telephone){
+            for(char j : i){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }
