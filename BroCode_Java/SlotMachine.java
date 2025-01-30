@@ -16,6 +16,7 @@ public class SlotMachine {
             System.out.println("Current balance -> $" + balance);
             System.out.print("Enter your bet amount -> $");
             bet = sc.nextInt();
+            sc.nextLine();
 
             if(bet > balance){
                 System.out.println("Insufficient balance!!");
@@ -43,7 +44,15 @@ public class SlotMachine {
             else{
                 System.out.println("Sorry you Lost!!");
             }
+
+            System.out.print("Do you want to play again? (Y/N) -> ");
+            String playAgain = sc.nextLine().toUpperCase();
+
+            if(!playAgain.equals("Y")){
+                break;
+            }
         }
+        System.out.println("!! Game Over !! Your final balance is $" + balance);
 
         sc.close();
     }
@@ -99,5 +108,7 @@ public class SlotMachine {
                 default -> 0;
             };
         }
+
+        return 0;
     }
 }
