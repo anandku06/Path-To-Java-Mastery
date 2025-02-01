@@ -9,9 +9,13 @@ public class Constructor {
         System.out.println(stud1.name);
         System.out.println(stud1.age);
         System.out.println(stud1.gpa);
-
+        System.out.println(stud1.isEnrolled);
+        
         System.out.println(stud2.name);
         System.out.println(stud2.age);
         System.out.println(stud2.gpa);
+        System.out.println(stud2.isEnrolled);
+
+        stud1.study();
     }
 }

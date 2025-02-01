@@ -11,7 +11,12 @@ public class Student {
         this.name = name;
         this.age = age;
         this.gpa = gpa;
+        this.isEnrolled = true;
         // here using 'this' keyword we assigned the variables that can be given when making objects of this class
         // here 'this' keyword is replaced by the new object we made with 'new' keyword
+    }
+
+    void study(){
+        System.out.println(this.name + " is studying!!"); // here the name attribute set can be used in any other methods 
     }
 }
