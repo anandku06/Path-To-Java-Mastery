@@ -8,5 +8,12 @@ public class OverloadedContructors{
 
         System.out.println(user1.userName);
         System.out.println(user1.email);
+
+        User user2 = new User("keshu1408", "1408keshugtxrtx@gmail.com");
+        // here the second constructor is called due to the params
+
+        System.out.println(user2.userName);
+        System.out.println(user2.email);
+
     }
 }
