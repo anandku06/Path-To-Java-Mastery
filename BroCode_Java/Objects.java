@@ -5,7 +5,7 @@ public class Objects {
         // a Class can behave as a blue-print for creating objects
 
         // to make an object or an instance of a class (here Car)
-        Car car = new Car(); // just like we do for Scanner ; using 'new' keyword make an instance of the class
+        Car car = new Car("Mustang", "Yellow"); // just like we do for Scanner ; using 'new' keyword make an instance of the class
 
         System.out.println(car); // this will give a memory address of that 'car' object
 
