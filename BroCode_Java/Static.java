@@ -16,5 +16,9 @@ public class Static {
        // as this static attributes are of class, so it should be accessed by the class not the objects
 
        System.out.println(Friend.numOfFriends); // this is the correct way to access static members of a class
+
+       Friend.showFriends(); // static methods with same rules
+
+       System.out.println(Math.round(12.875)); // here as well round is a static method thats why it can be accessed with class name Math
     }
 }

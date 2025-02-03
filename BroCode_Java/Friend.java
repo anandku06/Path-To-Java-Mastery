@@ -9,4 +9,8 @@ public class Friend {
         numOfFriends++;
     }
 
+    static void showFriends(){
+        System.out.println("You have " + numOfFriends + " friends."); // not using 'this' keyword as this is a 'static' method and as it always refers to the class itself so no need
+    }
+
 }
