@@ -7,6 +7,7 @@ public class Inheritance {
     public static void main(String[] args) {
         Dog dog1 = new Dog();
         Cat cat1 = new Cat();
+        Plants plant = new Plants();
 
         System.out.println(dog1.isAlive);
         System.out.println(cat1.isAlive);
@@ -19,5 +20,13 @@ public class Inheritance {
 
         dog1.speak();
         cat1.speak();
+
+        plant.photosynthesis();
     }
 }
+
+// now the Animal class inherits properties from Organism class and Dog and Cat classes are child of Animal class
+// this is multi-level inheritance
+
+// A Plants class inherits its properties from Organism class and Animal class as well
+// this is multiple inheritance
