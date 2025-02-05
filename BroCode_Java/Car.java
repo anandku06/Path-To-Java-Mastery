@@ -11,6 +11,12 @@ public class Car {
         this.model = model;
         this.color = color;
     }
+    Car(String model, String color, String make, int year){
+        this.model = model;
+        this.make = make;
+        this.color = color;
+        this.year = year;
+    }
     // class methods
     void start(){
         isRunning = true;
@@ -29,4 +35,10 @@ public class Car {
     void brake(){
         System.out.println("You brake the " + this.model + "!!");
     }
+
+    @Override
+    public String toString(){
+        return this.color + " " + this.year + " " + this.make + " " + this.model;
+    }
+    // so that the object made can be accessed using the println function
 }
