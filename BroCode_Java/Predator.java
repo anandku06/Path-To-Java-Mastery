@@ -1,4 +1,4 @@
 public interface Predator {
     
-    void hunt();
+    void hunt(); // this method is implicitly public and abstract
 }

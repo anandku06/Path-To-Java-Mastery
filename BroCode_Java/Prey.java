@@ -1,4 +1,4 @@
 public interface Prey {
 
-    void flee();
+    void flee(); // this method is implicitly public and abstract
 }
