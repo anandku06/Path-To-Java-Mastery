@@ -1,4 +1,4 @@
-public class Fish extends Animal{
+public class Fish extends Animal implements Predator, Prey{
     
     @Override // using this to signify that this method is overridden
     // also provides a check that this method can't be spelled wrong
@@ -6,4 +6,15 @@ public class Fish extends Animal{
     void move(){
         System.out.println("This animal is swimming!!");
     }
+
+    @Override
+    public void flee(){
+        System.out.println("The fish is swimming away!!");
+    }
+
+    @Override
+    public void hunt(){
+        System.out.println("The fish is hunting!!");
+    }
 }
+// implementing the multiple interfaces seperating by comma
