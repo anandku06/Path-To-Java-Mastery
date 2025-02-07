@@ -4,6 +4,7 @@ public class Dog extends Animal{
     int lives = 1;
     boolean isAlive = true;
 
+    @Override
     void speak(){
         System.out.println("The dog goes *woof*!!");
     }
