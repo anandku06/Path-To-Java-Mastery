@@ -7,6 +7,7 @@ public class Car extends Vehicle{
 
     // here not using static keyword because we are instantiating the class ; we are making the objects of the class
 
+    Car(){}
     Car(String model, String color){
         this.model = model;
         this.color = color;
