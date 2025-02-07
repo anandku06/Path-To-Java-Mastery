@@ -1,6 +1,6 @@
-public abstract class Vehicle {
+public interface Vehicle {
     
-    abstract void go();
+    void go();
 }
 
 // made a vehicle class which is abstract and has a abstract method

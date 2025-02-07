@@ -15,5 +15,9 @@ public class Polymorphism {
 
         Vehicle[] vehicles = {car, bike, boat};
         // made an array of vehicles using the 'Vehicle' as the common datatype bcz each class extends that class
+
+        for (Vehicle vehicle : vehicles) {
+            vehicle.go();
+        }
     }
 }

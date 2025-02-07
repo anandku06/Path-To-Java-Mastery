@@ -1,4 +1,4 @@
-public class Car extends Vehicle{
+public class Car implements Vehicle{
     // Class attributes -> properties of the class
     String make, model, color;
     int year = 2000;
@@ -44,7 +44,7 @@ public class Car extends Vehicle{
     // so that the object made can be accessed using the println function
 
     @Override
-    void go(){
+    public void go(){
         System.out.println("You drive the car!!");
     }
 }
