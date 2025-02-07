@@ -25,3 +25,4 @@ public class RuntimePolymorphism {
         sc.close();
     }
 }
+// here at runtime, we are instantiating the class Animal with its morphed classes either Dog or Cat depending on the user input, this is runtime polymorphism
