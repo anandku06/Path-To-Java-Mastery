@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends Vehicle{
     // Class attributes -> properties of the class
     String make, model, color;
     int year = 2000;
@@ -41,4 +41,9 @@ public class Car {
         return this.color + " " + this.year + " " + this.make + " " + this.model;
     }
     // so that the object made can be accessed using the println function
+
+    @Override
+    void go(){
+        System.out.println("You drive the car!!");
+    }
 }
