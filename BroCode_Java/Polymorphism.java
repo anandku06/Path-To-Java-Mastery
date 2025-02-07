@@ -4,6 +4,7 @@ public class Polymorphism {
         // polymorphism -> POLY means Many ;  MORPH means shape
         // objects can identify as other objects
         // objects can be treated as objects of a common superclass
+        // can be achieved using interfaces as well
 
         Car car = new Car();
         Bike bike = new Bike();
