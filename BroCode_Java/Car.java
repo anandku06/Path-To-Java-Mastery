@@ -38,11 +38,11 @@ public class Car implements Vehicle{
     }
 
     // GETTER methods -> using this method to get the private properties of the class
-    String getModel(String model){
+    String getModel(){
         return this.model;
     }
-    String getColor(String model){
-        return this.model;
+    String getColor(){
+        return this.color;
     }
 
     @Override

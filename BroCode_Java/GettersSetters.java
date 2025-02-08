@@ -8,6 +8,6 @@ public class GettersSetters {
         // without SETTER GETTER approach
         Car car = new Car("M4 Competition", "Matte Black");
 
-        System.out.println(car.color + " " + car.model);
+        System.out.println(car.getColor() + " " + car.getModel());
     }
 }
