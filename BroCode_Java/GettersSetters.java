@@ -4,10 +4,9 @@ public class GettersSetters {
         // GETTERS -> methods that make a field READABLE
         // SETTERS -> methods that make a field WRITEABLE
 
-
-        // without SETTER GETTER approach
         Car car = new Car("M4 Competition", "Matte Black");
 
         System.out.println(car.getColor() + " " + car.getModel());
+        // using the GETTER method to get the private vars from the class
     }
 }
