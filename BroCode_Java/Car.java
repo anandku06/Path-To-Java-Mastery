@@ -1,6 +1,6 @@
 public class Car implements Vehicle{
     // Class attributes -> properties of the class
-    String make, model, color;
+    private String make, model, color; // made these properties private to limit thier modification
     int year = 2000;
     double price = 59999.99;
     boolean isRunning = true;
@@ -35,6 +35,14 @@ public class Car implements Vehicle{
 
     void brake(){
         System.out.println("You brake the " + this.model + "!!");
+    }
+
+    // GETTER methods -> using this method to get the private properties of the class
+    String getModel(String model){
+        return this.model;
+    }
+    String getColor(String model){
+        return this.model;
     }
 
     @Override
