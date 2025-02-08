@@ -16,5 +16,10 @@ public class Fish extends Animal implements Predator, Prey{
     public void hunt(){
         System.out.println("The fish is hunting!!");
     }
+
+    @Override
+    void speak(){
+        System.out.println("Fish doesn't speak!!!");
+    }
 }
 // implementing the multiple interfaces seperating by comma
