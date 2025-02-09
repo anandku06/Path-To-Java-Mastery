@@ -1,16 +1,25 @@
+import java.util.Date;
+
 public class Car implements Vehicle{
     // Class attributes -> properties of the class
-    private String make, model, color; // made these properties private to limit thier modification
+    private String model, color; // made these properties private to limit thier modification
+    private final String make; // made this private and used 'final' keyword to limit its modification
     int year = 2000;
     double price = 59999.99;
     boolean isRunning = true;
 
     // here not using static keyword because we are instantiating the class ; we are making the objects of the class
 
-    Car(){}
+    Car(){
+        this.model = null;
+        this.make = null;
+        this.color = null;
+        this.year = new Date().getYear();
+    }
     Car(String model, String color){
         this.model = model;
         this.color = color;
+        this.make = "Unknown"; // default value for make
     }
     Car(String model, String color, String make, int year){
         this.model = model;
@@ -43,6 +52,16 @@ public class Car implements Vehicle{
     }
     String getColor(){
         return this.color;
+    }
+
+    //SETTER methods -> using this method to modify the private data members
+
+    void setColor(String color){
+        this.color = color;
+    }
+
+    void setModel(String model){
+        this.model = model;
     }
 
     @Override

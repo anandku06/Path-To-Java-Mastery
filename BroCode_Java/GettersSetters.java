@@ -6,6 +6,8 @@ public class GettersSetters {
 
         Car car = new Car("M4 Competition", "Matte Black");
 
+        car.setColor("Chrome Red");
+
         System.out.println(car.getColor() + " " + car.getModel());
         // using the GETTER method to get the private vars from the class
     }
