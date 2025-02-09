@@ -9,8 +9,8 @@ public class Objects {
 
         System.out.println(car); // this will give a memory address of that 'car' object
 
-        System.out.println(car.make); // to access the attributes/properties of the class use dot notations(.)
-        System.out.println(car.model);
+        System.out.println(car.getMake()); // to access the attributes/properties of the class use dot notations(.)
+        System.out.println(car.getModel());
 
         System.out.println(car.isRunning);
         car.isRunning = false; // the properties can be modified as well

@@ -53,6 +53,9 @@ public class Car implements Vehicle{
     String getColor(){
         return this.color;
     }
+    String getMake(){
+        return this.make;
+    }
 
     //SETTER methods -> using this method to modify the private data members
 

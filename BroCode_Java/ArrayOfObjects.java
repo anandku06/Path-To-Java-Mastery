@@ -10,7 +10,7 @@ public class ArrayOfObjects {
         };
 
         for (Car car : cars) {
-            car.color = "Matte Black";
+            car.getColor();
             car.drive();
         }
         // here for each 'car' in 'cars' call this
