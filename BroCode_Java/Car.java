@@ -17,6 +17,9 @@ public class Car implements Vehicle{
         this.year = yr;
         this.engine = new Engine(engineType);
     }
+    // made a constructor that dynamically creates a engine object and engineType args is passed to it
+    // here composition take place : The class Car requires another class as its part i.e. Engine that provides the engine type of Car's object when initialised
+
     Car(){
         this.model = null;
         this.make = null;
@@ -37,7 +40,8 @@ public class Car implements Vehicle{
     // class methods
     void start(){
         isRunning = true;
-        System.out.println("You started the engine!!");
+        this.engine.start();
+        System.out.println("Your " + this.model + " is running!!");
     }
 
     void stop(){
