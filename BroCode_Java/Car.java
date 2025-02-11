@@ -7,9 +7,16 @@ public class Car implements Vehicle{
     int year = 2000;
     double price = 59999.99;
     boolean isRunning = true;
+    Engine engine;
 
     // here not using static keyword because we are instantiating the class ; we are making the objects of the class
 
+    Car(String model, int yr, String engineType){
+        this.make = null;
+        this.model = model;
+        this.year = yr;
+        this.engine = new Engine(engineType);
+    }
     Car(){
         this.model = null;
         this.make = null;
