@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class ArrayLists{
     public static void main(String[] args){
@@ -42,5 +43,21 @@ public class ArrayLists{
         for(int num : list){
             System.out.println(num);
         }
+
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<String> fruits = new ArrayList<>();
+        System.out.print("Enter the number of fruits -> ");
+        int numOfFruits = sc.nextInt();
+        sc.nextLine();
+
+        System.out.print("Enter the fruits -> ");
+        for(int i = 0; i < numOfFruits; i++){
+            fruits.add(sc.nextLine());
+        }
+
+        System.out.println(fruits);
+
+        sc.close();
     }
 }
