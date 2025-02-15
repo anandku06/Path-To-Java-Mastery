@@ -13,6 +13,20 @@ public class ArrayLists{
         list.add(23);
         list.add(456);
 
-        System.out.println(list);
+        ArrayList<Double> list2  = new ArrayList<>(); 
+        list2.add(4.56); 
+        list2.add(12.34);
+        list2.add(23.34);
+        list2.add(456.45);
+
+        ArrayList<String> foods  = new ArrayList<>(); 
+        foods.add("apple"); 
+        foods.add("banana");
+        foods.add("strawberry");
+        foods.add("cherry");
+
+        System.out.println(list); // prints the whole array
+        System.out.println(list2); 
+        System.out.println(foods); 
     }
 }
