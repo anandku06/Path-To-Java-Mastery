@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayLists{
     public static void main(String[] args){
@@ -25,8 +26,21 @@ public class ArrayLists{
         foods.add("strawberry");
         foods.add("cherry");
 
+        foods.remove("apple"); // remove method removes the specified element or the index
+        foods.remove(1); 
+
+        foods.set(0, "pineapple"); // sets the element at the specified index overwritting the previous one
+
         System.out.println(list); // prints the whole array
         System.out.println(list2); 
-        System.out.println(foods); 
+        System.out.println(foods);  
+        System.out.println(list2.size()); // returns the size of the list 
+        System.out.println(list2.get(2)); // gets the element at the specified index 
+        Collections.sort(list); // sorts the list ; Collections contains all the necessary packages required just like C++ STL
+        System.out.println(list); 
+
+        for(int num : list){
+            System.out.println(num);
+        }
     }
 }
