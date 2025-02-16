@@ -29,7 +29,19 @@ public class ExceptionHandling {
             System.out.println("You can't divide the number by ZERO!!");
         }
 
+        
+        try (Scanner sc1 = new Scanner(System.in)) {
+            System.out.print("Enter your choice -> ");
+            String choice = sc1.nextLine();
+            System.out.println(choice);
+        } catch (Exception e) {
+            System.out.println("Something went wrong!!");
+        }
+        // this is try_resources block : trying the resource Scanner and if it throws an error catch block will execute
 
-        sc.close();
+        finally{
+            sc.close();
+            System.out.println("This finally executes!!");
+        } // optional, always execute, for clean up any resources
     }
 }
