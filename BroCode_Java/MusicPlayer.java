@@ -37,6 +37,25 @@ public class MusicPlayer {
             clip.open(audio); // load audio data from an AudioInputStream into a Clip so that it can be
                               // played.
             System.out.println("Audio is Playing...");
+            String res = "";
+
+            while (!res.equals("Q")) {
+                System.out.println("P: Play");
+                System.out.println("S: Stop");
+                System.out.println("R: Reset");
+                System.out.println("Q: Quit");
+
+                System.out.print("Enter your choice -> ");
+                res = sc.next().toUpperCase();
+
+                switch(res){
+                    case "P" -> clip.start(); // used to start the playing of the audio
+                    case "S" -> clip.stop(); // used to stop the audio
+                    case "R" -> clip.setMicrosecondPosition(0); // sets the position of the elapsed audio time to the desired microseconds
+                    case "Q" -> clip.close();
+                    default -> System.out.println("Invalid choice!!");
+                }
+            }
 
             // using the event Listeners approach
             // clip.addLineListener(event -> {
@@ -46,13 +65,11 @@ public class MusicPlayer {
             // }
             // });
 
-            clip.start(); // used to start the playing of the audio
-
             // using the Thread approach
-            Thread.sleep(clip.getMicrosecondLength() / 1000); // pauses the execution of the main program till the audio
+            // Thread.sleep(clip.getMicrosecondLength() / 1000); // pauses the execution of the main program till the audio
                                                               // is playing
 
-        } catch (InterruptedException | LineUnavailableException | UnsupportedAudioFileException | IOException e) {
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException e) {
             System.out.println(e);
         } finally {
             System.out.println("Now playing!!");
