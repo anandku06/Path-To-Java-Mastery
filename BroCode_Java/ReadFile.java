@@ -16,7 +16,11 @@ public class ReadFile {
 
         // reading the writed file can be dangerous code, so enclosing it in try-catch block
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))){
-            
+            String line; // declared a local variable to contain the lines of the file
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+            // using the loop to read the lines until eof(end of file) or null is reached
         } catch (FileNotFoundException e) {
             System.out.println(e);
         }
