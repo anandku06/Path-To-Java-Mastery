@@ -11,7 +11,7 @@ public class WriteFiles {
         // PrintWriter -> best for structured data, like reports or logs
         // FileOutputStream -> best for binary files (e.g. images, audio files)
 
-        String filePath = "test.txt"; // contains the new path for the file : for the filepath use double backslash
+        String filePath = "C:\\Users\\risha\\OneDrive\\Desktop\\test.txt"; // contains the new path for the file : for the filepath use double backslash
         String textContent = "I like Pizza!\nIt's really nice!!"; // now the text content is in this variable
         String textContent2 = "I also like Burger as well\n and I am huungry as well\n Please buy me Pizza or Burger!!";
 
