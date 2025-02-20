@@ -16,7 +16,7 @@ public class HangmanGame {
         System.out.println("Welcome to JavaHangMan!!");
 
         while (wrongGuesses <= 6) {
-            System.out.println(getHangamnArt(wrongGuesses));
+            System.out.println(getHangmanArt(wrongGuesses));
             
             System.out.print("Word: ");
             for(char c : wordState){
@@ -42,10 +42,16 @@ public class HangmanGame {
             }
         }
 
+        if(wrongGuesses > 6){
+            System.out.println(getHangmanArt(wrongGuesses));
+            System.out.println("Game Over!!");
+            System.out.println("The word was " + word);
+        }
+
         sc.close();
     }
 
-    static String getHangamnArt(int wrongGuesses) {
+    static String getHangmanArt(int wrongGuesses) {
         return switch (wrongGuesses) {
             case 6 -> """
 
