@@ -15,22 +15,23 @@ public class HangmanGame {
         }
         System.out.println("Welcome to JavaHangMan!!");
 
+        System.out.println(getHangamnArt(6));
         sc.close();
     }
 
     static String getHangamnArt(int wrongGuesses){
         return switch(wrongGuesses){
-            case 0 -> """
+            case 6 -> """
                     
 
 
                     """;
-            case 1 -> """
+            case 5 -> """
                       o
 
 
                     """;
-            case 2 -> """
+            case 4 -> """
                       o
                       |  
 
@@ -40,22 +41,22 @@ public class HangmanGame {
                      /|  
 
                     """;
-            case 4 -> """
+            case 2 -> """
                       o
                      /|\\  
 
                     """;
-            case 5 -> """
+            case 1 -> """
                       o
                      /|\\  
                      /   
                     """;
-            case 6 -> """
+            case 0 -> """
                       o
                      /|\\  
                      / \\   
                     """;
             default -> "";                   
-        }
+        };
     }
 }
