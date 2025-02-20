@@ -35,6 +35,12 @@ public class HangmanGame {
                         wordState.set(i, guess); // Replaces the element at the specified position in this list with the specified element
                     }
                 }
+                if(!wordState.contains('_')){
+                    System.out.println(getHangmanArt(wrongGuesses));
+                    System.out.println("YOU WIN!!");
+                    System.out.println("The word was " + word);
+                    break;
+                }
             }
             else{
                 wrongGuesses++;
