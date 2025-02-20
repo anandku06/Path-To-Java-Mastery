@@ -20,8 +20,8 @@ public class HangmanGame {
             System.out.println(e);
         }
 
-        /*
-        String word = "Pizza";
+        Random rand = new Random();
+        String word = words.get(rand.nextInt(0, words.size()));
 
         Scanner sc = new Scanner(System.in);
 
@@ -73,7 +73,6 @@ public class HangmanGame {
         }
 
         sc.close();
-        */
     }
 
     static String getHangmanArt(int wrongGuesses) {
