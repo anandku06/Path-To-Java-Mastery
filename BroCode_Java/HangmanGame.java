@@ -15,7 +15,15 @@ public class HangmanGame {
         }
         System.out.println("Welcome to JavaHangMan!!");
 
-        System.out.println(getHangamnArt(6));
+        System.out.print("Word: ");
+        for(char c : wordState){
+            System.out.print(c + " ");
+        }
+        System.out.println();
+        
+        System.out.println("Enter your guess -> ");
+        char guess = sc.next().toLowerCase().charAt(0);
+
         sc.close();
     }
 
