@@ -1,8 +1,26 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class HangmanGame {
     public static void main(String[] args) {
+
+        String filePath = "words.txt";
+        ArrayList<String> words = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                words.add(line.trim());
+            }
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+
+        /*
         String word = "Pizza";
 
         Scanner sc = new Scanner(System.in);
@@ -55,6 +73,7 @@ public class HangmanGame {
         }
 
         sc.close();
+        */
     }
 
     static String getHangmanArt(int wrongGuesses) {
