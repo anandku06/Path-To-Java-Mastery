@@ -18,5 +18,10 @@ public class Generics {
 
         nums.setItem(234);
         System.out.println(nums.getItem());
+
+        // using the newly made class with multiple generics, String and Integer
+        Products<String, Integer> product = new Products<>(choco.getItem(), nums.getItem());
+
+        System.out.println("The product is " + product.getItem() + " and its price is Rs."  + product.getPrice());
     }
 }
