@@ -14,7 +14,7 @@ public class CountDownTimer {
             public void run(){
                 System.out.println(count);
                 count--;
-                if(count < 0){
+                if(count < 1){
                     System.out.println("Happy New Year!!");
                     timer.cancel();
                 }
